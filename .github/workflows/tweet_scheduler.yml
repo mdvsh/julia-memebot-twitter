@@ -15,6 +15,7 @@ jobs:
     - uses: julia-actions/setup-julia@v1
       with:
         version: '1.0.4'
+    - uses: julia-actions/julia-buildpkg@master
     - run: julia --project src/memebot.jl 
       
       
