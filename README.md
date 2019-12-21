@@ -3,7 +3,8 @@
 
 Twitter bot which posts meme from specified subreddits. <br>For GCI'19 | Julia
 
-*Using [R3l3ntl3ss/Meme_Api](https://github.com/R3l3ntl3ss/Meme_Api)*![Bot Logo](logo.png)
+Runs every 30th minute past the 0, 3, 6, 9, 12, 15, 18 and 21th hour <br>
+*Memes using reddit and [R3l3ntl3ss/Meme_Api](https://github.com/R3l3ntl3ss/Meme_Api)*![Bot Logo](logo.png)
 
 ## Task Description
 
