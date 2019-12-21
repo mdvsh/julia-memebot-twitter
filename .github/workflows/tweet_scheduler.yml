@@ -1,0 +1,17 @@
+name: tweet_scheduler
+
+on: 
+  schedule:
+    - cron: '30 * * * *'
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: julia main.jl
+      working-directory: ./bot
+
