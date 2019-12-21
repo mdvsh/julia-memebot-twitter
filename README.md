@@ -1,9 +1,9 @@
 
 # julia-memebot-twitter
 
-Twitter bot which posts meme from specified subreddits. For GCI'19 | Julia
+Twitter bot which posts meme from specified subreddits. <br>For GCI'19 | Julia
 
-![Bot Logo](logo.png)
+*Using [R3l3ntl3ss/Meme_Api](https://github.com/R3l3ntl3ss/Meme_Api)*![Bot Logo](logo.png)
 
 ## Task Description
 
