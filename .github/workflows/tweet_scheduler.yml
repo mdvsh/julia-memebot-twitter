@@ -2,7 +2,7 @@ name: tweet_scheduler
 
 on: 
   schedule:
-    - cron: '* * * * *'
+    - cron: '5 4 * * sun'
 
 jobs:
   build:
