@@ -2,7 +2,8 @@ name: tweet_scheduler
 
 on: 
   schedule:
-    - cron: '5 4 * * sun'
+    - cron: '*/2 * * * *'
+      #runs every other minute (hopefully!)
 
 jobs:
   build:
@@ -14,7 +15,7 @@ jobs:
     - uses: julia-actions/setup-julia@v1
       with:
         version: '1.0.4'
-    - run: julia -e bot/main.jl
+    - run: julia --project memebot/main.jl 
       
       
 
