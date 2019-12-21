@@ -2,8 +2,8 @@ name: tweet_scheduler
 
 on: 
   schedule:
-    - cron: '*/2 * * * *'
-      #runs every other minute (hopefully!)
+    - cron: '0 12 * * sun'
+      #Runs at 12:00 UTC on Sun (hopefully!)
 
 jobs:
   build:
