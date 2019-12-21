@@ -1,3 +1,8 @@
+name = "memebot"
+uuid = "4bafaffa-819d-4a6f-9d98-ad3a10d7c108"
+authors = ["Madhav <shekharmadhav03@gmail.com>"]
+version = "0.1.0"
+
 [deps]
 Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
