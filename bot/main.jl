@@ -49,6 +49,7 @@ function get_meme()
     imagel_ink = json["memes"][1]["url"]
     type = split(imagel_ink, ".")[end]
     img_name = "image.$type"
+    println("status: ", req.status)
     download(imagel_ink, img_name)
     return json, img_name
 end
@@ -57,7 +58,7 @@ function tweet()
     meme, name = get_meme()
     post_link = meme["memes"][1]["postLink"]
     title = meme["memes"][1]["title"]
-    media_id = upload(name)
+    media_id = step_one(name)
     options = Dict("status" => "$title\n\nSource: $post_link", "media_ids" => media_id)
     r_tweet = tweet_oauth(post_url, options)
     println("(Testing) Status: ", r_tweet.status)
