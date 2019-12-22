@@ -59,7 +59,7 @@ function tweet()
     post_link = meme["memes"][1]["postLink"]
     title = meme["memes"][1]["title"]
     media_id = step_one(name)
-    options = Dict("status" => "$title\n\nSource: $post_link", "media_ids" => media_id)
+    options = Dict("status" => "$title\nSource: $post_link\n\n-By http://bit.ly/PseudoCodeNerd-memeBot", "media_ids" => media_id)
     r_tweet = tweet_oauth(post_url, options)
     println("(Testing) Status: ", r_tweet.status)
 end
