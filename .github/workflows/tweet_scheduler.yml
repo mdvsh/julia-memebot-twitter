@@ -11,6 +11,12 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Setup ENV
+      env:
+        OAUTH_CONSUMER_KEY: "${{ secrets.OAUTH_CONSUMER_KEY}}"
+        OAUTH_CONSUMER_SECRET: "${{ secrets.OAUTH_CONSUMER_SECRET}}"
+        OAUTH_TOKEN: "${{ secrets.OAUTH_TOKEN}}"
+        OAUTH_TOKEN_SECRET: "${{ secrets.OAUTH_TOKEN_SECRET}}"
     - uses: actions/checkout@v1
     - uses: julia-actions/setup-julia@v1
       with:
