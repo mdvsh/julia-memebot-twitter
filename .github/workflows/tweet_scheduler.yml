@@ -17,11 +17,13 @@ jobs:
         OAUTH_CONSUMER_SECRET: "${{ secrets.OAUTH_CONSUMER_SECRET}}"
         OAUTH_TOKEN: "${{ secrets.OAUTH_TOKEN}}"
         OAUTH_TOKEN_SECRET: "${{ secrets.OAUTH_TOKEN_SECRET}}"
-    - uses: actions/checkout@v1
-    - uses: julia-actions/setup-julia@v1
+      uses: actions/checkout@v1
+    - name: Setup Julia
+      uses: julia-actions/setup-julia@v1
       with:
         version: '1.0.4'
-    - uses: julia-actions/julia-buildpkg@master
+    - name: Build Julia
+      uses: julia-actions/julia-buildpkg@master
     - run: julia --project src/memebot.jl 
       
       
